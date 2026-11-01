@@ -116,7 +116,7 @@
             "Abodabodd"
         ],
         "description": "",
-        "fileSize": 14658,
+        "fileSize": 15003,
         "repositoryUrl": "https://github.com/Abodabodd/re-3arabi",
         "language": "ar",
         "tvTypes": [
@@ -125,7 +125,7 @@
         ],
         "iconUrl": "https://fitnur.com/uploads/avatars/c5ae8dadf88bcea9549657ec451a1563.jpg",
         "apiVersion": 1,
-        "fileHash": "sha256-96607f1f5b4e32f5ce688a75b459ab77d8bad97d08b1a2a2bc5f5dcd54035197"
+        "fileHash": "sha256-cb69c4af2238498ee3279d971fcc9c8890360cddd67b010bd60b5f9871d0392f"
     },
     {
         "url": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/Anim3rb.cs3",
@@ -274,6 +274,30 @@
         "iconUrl": "https://amd.brstej.com/22.png",
         "apiVersion": 1,
         "fileHash": "sha256-17c6074460176b5547d0d242c09727c427bedae8bfe2529693e60f0b0348cb31"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/Carateen.cs3",
+        "status": 1,
+        "version": 1,
+        "name": "Carateen",
+        "internalName": "Carateen",
+        "authors": [
+            "abodabodd"
+        ],
+        "description": "عد بالزمن للوراء وشاهد كارتون الطفولة ✨",
+        "fileSize": 24316,
+        "repositoryUrl": "https://github.com/Abodabodd/re-3arabi",
+        "language": "ar",
+        "tvTypes": [
+            "Movie",
+            "TvSeries",
+            "Anime",
+            "Cartoon",
+            "Live"
+        ],
+        "iconUrl": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/refs/heads/main/Carateen/icon.png",
+        "apiVersion": 1,
+        "fileHash": "sha256-447369857727c7816818cd523aa1cf03521124ab5356029a1dc3b434cf473c34"
     },
     {
         "url": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/Cee.cs3",
@@ -500,7 +524,7 @@
             "Abodabodd"
         ],
         "description": "",
-        "fileSize": 52317,
+        "fileSize": 53417,
         "repositoryUrl": "https://github.com/Abodabodd/re-3arabi",
         "language": "ar",
         "tvTypes": [
@@ -509,7 +533,7 @@
         ],
         "iconUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ03aoQBNDy_Hkm5MUGGvluPvK7To7BdGiSnzQn7WJ3fQ&s=10",
         "apiVersion": 1,
-        "fileHash": "sha256-db34023930921e4075060c728cf6205244911e3a7f9829886b1cd69c2d6a43a9"
+        "fileHash": "sha256-cc4dee201c829819a130f513912e4089350cb2449184553fa412354baefbb40d"
     },
     {
         "url": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/Krmzy.cs3",
@@ -578,7 +602,7 @@
     },
     {
         "url": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/OscarTv.cs3",
-        "status": 1,
+        "status": 0,
         "version": 1,
         "name": "OscarTv",
         "internalName": "OscarTv",
