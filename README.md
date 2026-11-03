@@ -3,14 +3,18 @@
 Add this repository in **Cloudstream → Settings → Extensions → Add repository**:
 
 ```text
-https://raw.githubusercontent.com/MTG9T4/re-3arabi/main/repo.json
+https://is.gd/mtg343
 ```
+
+Use the **whole short URL**, including `https://`. `mtg343` alone is not a registered Cloudstream code. This link redirects directly to this fork's manifest and was verified on 2026-11-03.
+
+Full URL fallback: `https://raw.githubusercontent.com/MTG9T4/re-3arabi/main/repo.json`.
 
 The catalog is organized into **Cartoons & Anime**, **Movies & Series**, **Live TV & Sports**, and **Other Sources & Tools**. Install the providers you want, then select their website names in Home/Search. Enable the Arabic extension-language filter if needed.
 
 New: **MySeed, Iwaatch, SpacePowerFan, ArabicCartoon, Shooot, OnlineSportLive**. Existing **CimaClub** now uses `w.cimacub.com` and version 2. Carateen version 2 is retained.
 
-| Category-only repository | Manifest filename (replace `repo.json` in the URL above) |
+| Category-only repository | Manifest filename (replace `repo.json` in the full fallback URL above) |
 | --- | --- |
 | Cartoons & anime | `repo-cartoons.json` |
 | Movies & series | `repo-movies.json` |

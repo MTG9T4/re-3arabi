@@ -5,7 +5,7 @@ This fork updates the existing Carateen provider from Abodabodd. It reads both c
 ## Install
 
 1. Open Cloudstream → Settings → Extensions → Add repository.
-2. Use any repository name and enter `https://raw.githubusercontent.com/MTG9T4/re-3arabi/main/repo.json`.
+2. Use any repository name and enter `https://is.gd/mtg343` (include `https://`). Full URL fallback: `https://raw.githubusercontent.com/MTG9T4/re-3arabi/main/repo.json`.
 3. Find and install **Carateen**. Enable Arabic in the language filter if needed.
 4. Select **Carateen** on Home or Search. The rows are **كرتون أيام زمان** (classic cartoons), **سبيستون غو** (Spacetoon Go), and **البث المباشر** (live channels).
 5. Open a show, select an episode, and play. Films with several editions label their links with the site's language/edition names.
