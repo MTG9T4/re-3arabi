@@ -1,0 +1,1034 @@
+{
+  "checked_at": "2026-11-03T08:30:48.137145+00:00",
+  "scope": "URL reachability only; HTTP 200 is not playback verification",
+  "sources": [
+    {
+      "provider": "3isk",
+      "url": "https://3esk.onl",
+      "source": "3isk\\src\\main\\kotlin\\com\\eshk\\eishk.kt",
+      "http": 200,
+      "final_url": "https://3iskk.xyz/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "قصة عشق",
+      "body_chars": 138754,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 200,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "5TV",
+      "url": "https://new61.5tv.lol",
+      "source": "5TV\\src\\main\\kotlin\\com\\tv\\5tv.kt",
+      "http": 403,
+      "final_url": "https://new61.5tv.lol/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "body_chars": 5585,
+      "protected": true,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 403,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "Aflaam",
+      "url": "https://aflaam.com",
+      "source": "Aflaam\\src\\main\\kotlin\\com\\aflaam\\aflaam.kt",
+      "http": 200,
+      "final_url": "https://aflaam.com/",
+      "content_type": "text/html",
+      "title": "افلام | مشاهدة و تحميل الافلام و المسلسلات مجانا",
+      "body_chars": 34081,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 200,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "Aia2tv 2",
+      "url": "https://ww1.asia2tv.pw",
+      "source": "Aia2tv 2\\src\\main\\kotlin\\com\\asia2tv\\Asia2tv.kt",
+      "http": 200,
+      "final_url": "https://ww1.asia2tv.pw/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "مشاهدة المسلسلات الكورية والآسيوية بالعربي | Asia2Tv دراما",
+      "body_chars": 65823,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 200,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "Akwam",
+      "url": "https://akwam.ss",
+      "source": "Akwam\\src\\main\\kotlin\\com\\akwam\\Akwam.kt",
+      "http": 200,
+      "final_url": "https://akwam.ss/",
+      "content_type": "text/html",
+      "title": "اكوام | موقع التحميل و المشاهدة العربي الاول",
+      "body_chars": 22930,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 200,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "Alooytv",
+      "url": "https://fitnur.com/alooytv",
+      "source": "Alooytv\\src\\main\\kotlin\\com\\alooy\\alooy.kt",
+      "http": 200,
+      "final_url": "https://fitnur.com/alooytv",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "AlooYTV الوي تي في — الروابط الرسمية والتطبيق",
+      "body_chars": 33126,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 200,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "Anim3rb",
+      "url": "https://anime3rb.com",
+      "source": "Anim3rb\\src\\main\\kotlin\\com\\anim3rb\\anim3rbProvider.kt",
+      "http": 403,
+      "final_url": "https://anime3rb.com/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "body_chars": 5588,
+      "protected": true,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 403,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "Anime-Phoenix",
+      "url": "https://anime-phoenix.com",
+      "source": "Anime-Phoenix\\src\\main\\kotlin\\com\\phoenix\\Phoenix.kt",
+      "http": 403,
+      "final_url": "https://anime-phoenix.com/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "body_chars": 5610,
+      "protected": true,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 403,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "Anime4up",
+      "url": "https://w1.anime4up.rest",
+      "source": "Anime4up\\src\\main\\kotlin\\com\\anime4up\\anime4up.kt",
+      "http": 200,
+      "final_url": "https://w1.anime4up.rest/home8/",
+      "content_type": "text/html",
+      "title": "Anime4up - انمي فور اب",
+      "body_chars": 417803,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 200,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "Animerco",
+      "url": "https://gat.animerco.org",
+      "source": "Animerco\\src\\main\\kotlin\\com\\animerco\\Animerco.kt",
+      "http": 403,
+      "final_url": "https://eva.animerco.org/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "body_chars": 5609,
+      "protected": true,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 403,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "AnimeRift",
+      "url": "https://gateway.embrassme.top/api/v4",
+      "source": "AnimeRift\\src\\main\\kotlin\\com\\animerift\\animerift.kt",
+      "http": 404,
+      "final_url": "https://anime-rift.com/404",
+      "content_type": "text/html; charset=utf-8",
+      "title": "404: This page could not be found",
+      "body_chars": 3598,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 404,
+          "exit": 0,
+          "error": ""
+        },
+        {
+          "http": 404,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "Animewitcher",
+      "url": "https://animewitcher.com",
+      "source": "Animewitcher\\src\\main\\kotlin\\com\\animewitcher\\animewitcher.kt",
+      "http": 200,
+      "final_url": "https://www.animewitcher.com/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "تحميل تطبيق Anime Witcher – أفضل تطبيق لمشاهدة الأنمي",
+      "body_chars": 510903,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 200,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "Bristege",
+      "url": "https://amd.brstej.com",
+      "source": "Bristege\\src\\main\\kotlin\\com\\bristeg\\bristegProvider.kt",
+      "http": 200,
+      "final_url": "https://brstejj.beer/home03",
+      "content_type": "text/html; charset=utf-8",
+      "title": "موقع برستيج | brstej",
+      "body_chars": 272349,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 200,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "Carateen",
+      "url": "https://carateen.tv",
+      "source": "Carateen\\src\\main\\kotlin\\com\\carateen\\CarateenProvider.kt",
+      "http": 200,
+      "final_url": "https://carateen.tv/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "موقع كراتين الرسمي - مشاهدة مسلسلات الكرتون وسبيستون غو بجودة عالية",
+      "body_chars": 6235,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 200,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "Cee",
+      "url": "https://cee.buzz",
+      "source": "Cee\\src\\main\\kotlin\\com\\cee\\Cee.kt",
+      "http": 0,
+      "final_url": "https://cee.buzz/",
+      "content_type": "",
+      "title": "",
+      "body_chars": 0,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 0,
+          "exit": 28,
+          "error": "curl: (28) Connection timed out after 8001 milliseconds"
+        },
+        {
+          "http": 0,
+          "exit": 28,
+          "error": "curl: (28) Connection timed out after 8000 milliseconds"
+        }
+      ]
+    },
+    {
+      "provider": "CimaClub",
+      "url": "https://cimacub.com",
+      "source": "CimaClub\\src\\main\\kotlin\\com\\cimaclub\\CimaClubProvider.kt",
+      "http": 200,
+      "final_url": "https://w.cimacub.com/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "سيما كلوب | CimaClub - مشاهدة افلام و مسلسلات و انمي مترجم و مدبلج اونلاين",
+      "body_chars": 283235,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 200,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "Cimalight",
+      "url": "https://r.cimalight.co",
+      "source": "Cimalight\\src\\main\\kotlin\\com\\cimalight\\cimalight.kt",
+      "http": 200,
+      "final_url": "https://e.cimalight.co/main31",
+      "content_type": "text/html; charset=utf-8",
+      "title": "سيما لايت CimaLight | مشاهدة الافلام والمسلسلات اون لاين",
+      "body_chars": 208346,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 200,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "Cimatn",
+      "url": "https://www.cimatn.com",
+      "source": "Cimatn\\src\\main\\kotlin\\com\\cimatn\\cimatn.kt",
+      "http": 200,
+      "final_url": "https://www.cimatn.com/?m=1",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "CIMA TN | شاهد الافلام التونسية و المسلسلات مجانا",
+      "body_chars": 245558,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 200,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "cinemana",
+      "url": "https://cinemana.shabakaty.cc",
+      "source": "cinemana\\src\\main\\kotlin\\com\\cinemana\\CinemanaProvider.kt",
+      "http": 0,
+      "final_url": "https://cinemana.shabakaty.cc/",
+      "content_type": "",
+      "title": "",
+      "body_chars": 0,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 0,
+          "exit": 28,
+          "error": "curl: (28) Connection timed out after 8001 milliseconds"
+        },
+        {
+          "http": 0,
+          "exit": 28,
+          "error": "curl: (28) Connection timed out after 8000 milliseconds"
+        }
+      ]
+    },
+    {
+      "provider": "dima-toon",
+      "url": "https://www.dima-toon.com",
+      "source": "dima-toon\\src\\main\\kotlin\\com\\dt\\dt.kt",
+      "http": 200,
+      "final_url": "https://www.dima-toon.com/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "كرتون ديما تون - أفضل موقع مسلسلات كرتون عربي أونلاين",
+      "body_chars": 185216,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 200,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "Egy",
+      "url": "https://rn62mwg.com/egywatchapp/public/api",
+      "source": "Egy\\src\\main\\kotlin\\com\\egy\\egy.kt",
+      "http": 200,
+      "final_url": "https://eegebest.com/error/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Egybest — تحديث التطبيق",
+      "body_chars": 23582,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 200,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "Egydead",
+      "url": "https://tv10.egydead.live/",
+      "source": "Egydead\\src\\main\\kotlin\\com\\egydead\\egydeadProvider.kt",
+      "http": 200,
+      "final_url": "https://a1.egydead.media/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "ايجي ديد | مشاهدة افلام و مسلسلات و انمي مترجم و مدبلج اونلاين",
+      "body_chars": 124692,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 200,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "Elif",
+      "url": "https://n.elif.news",
+      "source": "Elif\\src\\main\\kotlin\\com\\elif\\elif.kt",
+      "http": 200,
+      "final_url": "https://w.elif.news/home7",
+      "content_type": "text/html; charset=utf-8",
+      "title": "اليف فيديو",
+      "body_chars": 167732,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 200,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "eseek",
+      "url": "https://qeseh.net",
+      "source": "eseek\\src\\main\\kotlin\\com\\eseek\\eseek.kt",
+      "http": 200,
+      "final_url": "https://qeseh.net/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "قصة عشق",
+      "body_chars": 59562,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 200,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "Faselhd",
+      "url": "https://web31312x.faselhdx.bid",
+      "source": "Faselhd\\src\\main\\kotlin\\com\\faselhd\\Faselhd.kt",
+      "http": 403,
+      "final_url": "https://www.fasel-hd.co/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "body_chars": 5501,
+      "protected": true,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 403,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "Krmzy",
+      "url": "https://krmzi.org",
+      "source": "Krmzy\\src\\main\\kotlin\\com\\krmzy\\krmzy.kt",
+      "http": 200,
+      "final_url": "https://krmzi.org/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "موقع قرمزي",
+      "body_chars": 44837,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 200,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "Lodynet",
+      "url": "https://lodynet.watch",
+      "source": "Lodynet\\src\\main\\kotlin\\com\\lody\\lody.kt",
+      "http": 200,
+      "final_url": "https://lodynet.top/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "لودي نت LODYNET",
+      "body_chars": 326981,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 200,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "MyCimaProvider",
+      "url": "https://mycima.living",
+      "source": "MyCimaProvider\\src\\main\\kotlin\\com\\mycima\\MyCimaProvider.kt",
+      "http": 301,
+      "final_url": "https://egydead.wiki/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "",
+      "body_chars": 0,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 301,
+          "exit": 47,
+          "error": "curl: (47) Maximum (6) redirects followed"
+        },
+        {
+          "http": 301,
+          "exit": 47,
+          "error": "curl: (47) Maximum (6) redirects followed"
+        }
+      ]
+    },
+    {
+      "provider": "OscarTv",
+      "url": "https://ostv-11-11.xyz",
+      "source": "OscarTv\\src\\main\\kotlin\\com\\oscartv\\OscarTvProvider.kt",
+      "http": 200,
+      "final_url": "https://ostv-11-11.xyz/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "",
+      "body_chars": 0,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 200,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "Rate",
+      "url": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/refs/heads/builds/plugins.json",
+      "source": "Rate\\src\\main\\kotlin\\com\\rate\\rate.kt",
+      "http": 200,
+      "final_url": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/refs/heads/builds/plugins.json",
+      "content_type": "text/plain; charset=utf-8",
+      "title": "",
+      "body_chars": 32905,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 200,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "Replaymatch",
+      "url": "https://fullmatchshows.com",
+      "source": "Replaymatch\\src\\main\\kotlin\\com\\replaymatch\\Replaymatch.kt",
+      "http": 200,
+      "final_url": "https://fullmatchshows.com/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "FullMatchShows - Watch Football Full Match Replay and Shows •",
+      "body_chars": 221790,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 200,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "Shahid4u",
+      "url": "https://shahed4u.im/",
+      "source": "Shahid4u\\src\\main\\kotlin\\com\\shahid4u\\Shahid4u.kt",
+      "http": 301,
+      "final_url": "https://shaahidd4u.net/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "",
+      "body_chars": 0,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 301,
+          "exit": 47,
+          "error": "curl: (47) Maximum (6) redirects followed"
+        },
+        {
+          "http": 301,
+          "exit": 47,
+          "error": "curl: (47) Maximum (6) redirects followed"
+        }
+      ]
+    },
+    {
+      "provider": "Shahidwbas",
+      "url": "https://w30.shahidwbas.tv",
+      "source": "Shahidwbas\\src\\main\\kotlin\\com\\shahidwbas\\shahidwbas.kt",
+      "http": 403,
+      "final_url": "https://w30.shahidwbas.tv/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "body_chars": 5614,
+      "protected": true,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 403,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "Syria-live",
+      "url": "https://www.syrlive.com",
+      "source": "Syria-live\\src\\main\\kotlin\\com\\syria\\syria.kt",
+      "http": 0,
+      "final_url": "https://www.syrlive.com/",
+      "content_type": "",
+      "title": "",
+      "body_chars": 0,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 0,
+          "exit": 35,
+          "error": "curl: (35) schannel: next InitializeSecurityContext failed: SEC_E_CERT_EXPIRED (0x80090328) - The received certificate has expired."
+        },
+        {
+          "http": 0,
+          "exit": 35,
+          "error": "curl: (35) schannel: next InitializeSecurityContext failed: SEC_E_CERT_EXPIRED (0x80090328) - The received certificate has expired."
+        }
+      ]
+    },
+    {
+      "provider": "Topcinema",
+      "url": "https://web8.topcinema.cam",
+      "source": "Topcinema\\src\\main\\kotlin\\com\\topcinema\\topcinemaProvider.kt",
+      "http": 301,
+      "final_url": "https://web.topcinemaa.live/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "",
+      "body_chars": 0,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 301,
+          "exit": 47,
+          "error": "curl: (47) Maximum (6) redirects followed"
+        },
+        {
+          "http": 301,
+          "exit": 47,
+          "error": "curl: (47) Maximum (6) redirects followed"
+        }
+      ]
+    },
+    {
+      "provider": "TukTukcima",
+      "url": "https://tuktukhd.com",
+      "source": "TukTukcima\\src\\main\\kotlin\\com\\tuk\\tuk.kt",
+      "http": 403,
+      "final_url": "https://tuktukcinemas.com/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "body_chars": 5631,
+      "protected": true,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 403,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "TuniflexBlog",
+      "url": "https://ttunflix.blogspot.com",
+      "source": "TuniflexBlog\\src\\main\\kotlin\\com\\tun\\tu.kt",
+      "http": 200,
+      "final_url": "https://ttunflix.blogspot.com/?m=1",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "TUN FLIX",
+      "body_chars": 607626,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 200,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "Tuniflix",
+      "url": "https://tuniflix.site",
+      "source": "Tuniflix\\src\\main\\kotlin\\com\\tuniflix\\tuniflix.kt",
+      "http": 200,
+      "final_url": "https://tuniflix.site/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Tuniflix",
+      "body_chars": 309122,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 200,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "TVgarden",
+      "url": "https://famelack.com",
+      "source": "TVgarden\\src\\main\\kotlin\\com\\tvgarden\\tvgarden.kt",
+      "http": 200,
+      "final_url": "https://famelack.com/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Famelack – Free Live TV, Radio & Webcams Worldwide",
+      "body_chars": 116942,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 200,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "Viu",
+      "url": "https://www.viu.com",
+      "source": "Viu\\src\\main\\kotlin\\com\\viu\\viu.kt",
+      "http": 200,
+      "final_url": "https://www.viu.com/ott/no-service/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Viu | No Service",
+      "body_chars": 4349,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 200,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "Wecima",
+      "url": "https://wecima.ac",
+      "source": "Wecima\\src\\main\\kotlin\\com\\wecima\\wecimaProvider.kt",
+      "http": 403,
+      "final_url": "https://wecima.cx/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "body_chars": 5559,
+      "protected": true,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 403,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "Witanime",
+      "url": "https://witanime.site",
+      "source": "Witanime\\src\\main\\kotlin\\com\\witanime\\WitanimeProvider.kt",
+      "http": 200,
+      "final_url": "https://witanime.site/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "WitAnime — مشاهدة وتحميل الانمي المترجم اون لاين",
+      "body_chars": 274882,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 200,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "Yacintv",
+      "url": "https://def11.ycnapi.com/api",
+      "source": "Yacintv\\src\\main\\kotlin\\com\\yacin\\yacin.kt",
+      "http": 0,
+      "final_url": "https://def11.ycnapi.com/api",
+      "content_type": "",
+      "title": "",
+      "body_chars": 0,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 0,
+          "exit": 6,
+          "error": "curl: (6) Could not resolve host: def11.ycnapi.com"
+        },
+        {
+          "http": 0,
+          "exit": 6,
+          "error": "curl: (6) Could not resolve host: def11.ycnapi.com"
+        }
+      ]
+    },
+    {
+      "provider": "Youtube",
+      "url": "https://www.youtube.com",
+      "source": "Youtube\\src\\main\\kotlin\\com\\youtube\\youtube.kt",
+      "http": 200,
+      "final_url": "https://m.youtube.com/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "YouTube",
+      "body_chars": 349574,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 200,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "MySeed",
+      "url": "https://myseed.cam/",
+      "requested": true,
+      "http": 200,
+      "final_url": "https://myseed.cam/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "ماي سيد - MySeed | عرب سيد - ArabSeed | مشاهدة وتحميل الأفلام والمسلسلات",
+      "body_chars": 27706,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 200,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "CimaClub-requested",
+      "url": "https://w.cimacub.com/",
+      "requested": true,
+      "http": 200,
+      "final_url": "https://w.cimacub.com/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "سيما كلوب | CimaClub - مشاهدة افلام و مسلسلات و انمي مترجم و مدبلج اونلاين",
+      "body_chars": 283235,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 200,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "Iwaatch",
+      "url": "https://iwaatch.com/",
+      "requested": true,
+      "http": 200,
+      "final_url": "https://iwaatch.com/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Watch Movies & Series Online Free | Iwaatch",
+      "body_chars": 395170,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 200,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "Iwaatch-sample",
+      "url": "https://iwaatch.com/movie/supergirl-2026",
+      "requested": true,
+      "http": 200,
+      "final_url": "https://iwaatch.com/movie/supergirl-2026",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Watch Supergirl (2026) Online Free | Iwaatch",
+      "body_chars": 140577,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 200,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "SpacePowerFan",
+      "url": "https://spacepowerfan.com/",
+      "requested": true,
+      "http": 200,
+      "final_url": "https://spacepowerfan.com/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "سبيس باور فان - لمشاهدة وتحميل حلقات الأنمي المدبلج والمترجم اون لاين",
+      "body_chars": 295029,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 200,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "ArabicCartoon",
+      "url": "https://arabiccartoon.org/home/",
+      "requested": true,
+      "http": 200,
+      "final_url": "https://arabiccartoon.org/home/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Arabic Cartoon | كرتون عربي – Arabic Cartoon | كرتون عربي",
+      "body_chars": 454292,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 200,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "Shooot",
+      "url": "https://shooot.me/",
+      "requested": true,
+      "http": 200,
+      "final_url": "https://shooot.me/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "يلا شوت | بث مباشر مباريات اليوم مجاناً — Yalla Shoot Football 2026",
+      "body_chars": 40963,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 200,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "provider": "OnlineSportLive",
+      "url": "https://onlinesportlive.com/",
+      "requested": true,
+      "http": 200,
+      "final_url": "https://onlinesportlive.com/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "الاسطورة لبث المباريات | livehd7 | بث مباشر مباريات اليوم HD",
+      "body_chars": 281206,
+      "protected": false,
+      "parking_signals": [],
+      "attempts": [
+        {
+          "http": 200,
+          "exit": 0,
+          "error": ""
+        }
+      ]
+    }
+  ]
+}

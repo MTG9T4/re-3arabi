@@ -39,4 +39,4 @@ Use JDK 17 or newer and an Android SDK. Set `ANDROID_HOME` and `GITHUB_REPOSITOR
 ./gradlew :Carateen:testDebugUnitTest :Carateen:writeCacheEntry
 ```
 
-The outputs are `Carateen/build/Carateen.cs3` and `Carateen/build/plugin-entry.json`. The **Carateen** GitHub workflow runs these checks and publishes to `builds`. The inherited all-provider workflow remains available manually; Carateen's workflow does not require unrelated provider secrets.
+The outputs are `Carateen/build/Carateen.cs3` and `Carateen/build/plugin-entry.json`. The **Sources** GitHub workflow runs these checks and publishes to `builds`. The inherited all-provider workflow remains available manually; the managed-provider workflow does not require unrelated provider secrets.

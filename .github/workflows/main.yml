@@ -1,7 +1,7 @@
 name: Build
 
 concurrency:
-  group: build-${{ github.ref }}
+  group: ${{ github.event_name == 'workflow_dispatch' && 'sources' || 'upstream' }}-${{ github.ref }}
   cancel-in-progress: true
 
 on:
@@ -336,6 +336,8 @@ jobs:
           find . -type f -name "*.cs3" \
             -exec cp {} $GITHUB_WORKSPACE/builds/ \; \
             || echo "No .cs3 files found"
+
+          python3 scripts/publish_sources.py . "$GITHUB_WORKSPACE/builds"
 
       - name: Push builds
         working-directory: "builds"

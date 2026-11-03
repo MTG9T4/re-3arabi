@@ -1,0 +1,58 @@
+[
+  {
+    "provider": "AnimeRift",
+    "url": "https://gateway.embrassme.top/api/v4",
+    "result": "404 https://anime-rift.com/404",
+    "exit": 0,
+    "error": ""
+  },
+  {
+    "provider": "Cee",
+    "url": "https://cee.buzz",
+    "result": "000 https://cee.buzz/",
+    "exit": 28,
+    "error": "curl: (28) Connection timed out after 7001 milliseconds"
+  },
+  {
+    "provider": "cinemana",
+    "url": "https://cinemana.shabakaty.cc",
+    "result": "000 https://cinemana.shabakaty.cc/",
+    "exit": 28,
+    "error": "curl: (28) Connection timed out after 7001 milliseconds"
+  },
+  {
+    "provider": "MyCimaProvider",
+    "url": "https://mycima.living",
+    "result": "200 https://egydead.casa/",
+    "exit": 0,
+    "error": ""
+  },
+  {
+    "provider": "Shahid4u",
+    "url": "https://shahed4u.im/",
+    "result": "200 https://shahhedd4u.net/",
+    "exit": 0,
+    "error": ""
+  },
+  {
+    "provider": "Syria-live",
+    "url": "https://www.syrlive.com",
+    "result": "000 https://www.syrlive.com/",
+    "exit": 35,
+    "error": "curl: (35) schannel: next InitializeSecurityContext failed: SEC_E_CERT_EXPIRED (0x80090328) - The received certificate has expired."
+  },
+  {
+    "provider": "Topcinema",
+    "url": "https://web8.topcinema.cam",
+    "result": "200 https://topcinemaa.vip/",
+    "exit": 0,
+    "error": ""
+  },
+  {
+    "provider": "Yacintv",
+    "url": "https://def11.ycnapi.com/api",
+    "result": "000 https://def11.ycnapi.com/api",
+    "exit": 6,
+    "error": "curl: (6) Could not resolve host: def11.ycnapi.com"
+  }
+]

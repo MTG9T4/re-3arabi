@@ -7,7 +7,7 @@ import com.lagradost.cloudstream3.utils.*
 import org.jsoup.nodes.Element
 
 class CimaClub : MainAPI() {
-    override var mainUrl = "https://cimacub.com"
+    override var mainUrl = "https://w.cimacub.com"
     override var name = "CimaClub"
     override val hasMainPage = true
     override var lang = "ar"
@@ -15,17 +15,13 @@ class CimaClub : MainAPI() {
     override val mainPage = mainPageOf(
         "$mainUrl/category/افلام-اجنبي/" to "أفلام أجنبي",
         "$mainUrl/category/افلام-عربي/" to "أفلام عربي",
-        "$mainUrl/category/افلام-هندي/" to "أفلام هندي",
-        "$mainUrl/category/افلام-اسيوية/" to "أفلام اسيوية",
-        "$mainUrl/category/افلام-انمي/" to "أفلام انمي",
-        "$mainUrl/category/مسلسلات-رمضان-2025/" to "مسلسلات رمضان 2025",
+        "$mainUrl/category/افلام-كرتون/" to "أفلام كرتون",
         "$mainUrl/category/مسلسلات-اجنبي/" to "مسلسلات أجنبي",
         "$mainUrl/category/مسلسلات-تركية/" to "مسلسلات تركية",
         "$mainUrl/category/مسلسلات-عربي/" to "مسلسلات عربي",
         "$mainUrl/category/مسلسلات-اسيوية/" to "مسلسلات اسيوية",
-        "$mainUrl/category/مسلسلات-هندية/" to "مسلسلات هندي",
         "$mainUrl/category/مسلسلات-انمي/" to "مسلسلات انمي",
-        "$mainUrl/category/مسلسلات-مدبلجة/" to "مسلسلات مدبلجة",
+        "$mainUrl/category/مسلسلات-كرتون/" to "مسلسلات كرتون",
     )
 
     private fun Element.toSearchResponse(): SearchResponse? {
@@ -84,11 +80,13 @@ class CimaClub : MainAPI() {
     override suspend fun load(url: String): LoadResponse {
         val document = app.get(url).document
 
-        val isTvSeries = url.contains("/series/") || url.contains("/مسلسل-") ||
+        val isTvSeries = document.selectFirst("h1.PostTitle")?.text()?.contains("مسلسل") == true || url.contains("/series/") || url.contains("/مسلسل-") ||
                 document.select("section.allepcont .row a").size > 1
 
         val title = document.selectFirst("h1.PostTitle")?.text()?.trim()
             ?: throw RuntimeException("Title not found on page: $url")
+        val watchUrl = document.selectFirst("a[href*=/watch]")?.absUrl("href")
+            ?: "${url.trimEnd('/')}/watch"
         val poster =
             document.selectFirst(".MainSingle .left .image img")?.attr("src")?.ifBlank { null }
         val plot = document.selectFirst(".StoryArea p")?.text()?.replace("قصة العرض", "")?.trim()
@@ -131,6 +129,13 @@ class CimaClub : MainAPI() {
                 }
             }
 
+            if (episodes.isEmpty()) {
+                episodes.add(newEpisode(watchUrl) {
+                    this.name = title
+                    this.episode = Regex("الحلقة\\s*(\\d+)").find(title)?.groupValues?.get(1)?.toIntOrNull()
+                    this.posterUrl = poster
+                })
+            }
             return newTvSeriesLoadResponse(
                 name = title,
                 url = url,
@@ -149,7 +154,7 @@ class CimaClub : MainAPI() {
                 name = title,
                 url = url,
                 type = TvType.Movie,
-                dataUrl = "$url/watch/"
+                dataUrl = watchUrl
             ) {
                 this.posterUrl = poster
                 this.plot = plot
@@ -167,9 +172,10 @@ class CimaClub : MainAPI() {
         callback: (ExtractorLink) -> Unit
     ): Boolean {
         val tag = "CimaClub"
-        val response = app.post(
+        var found = false
+        val emit: (ExtractorLink) -> Unit = { found = true; callback(it) }
+        val response = app.get(
             data,
-            data = mapOf("watch" to "1"),
             headers = mapOf("Referer" to data)
         )
         val document = response.document
@@ -177,17 +183,17 @@ class CimaClub : MainAPI() {
             val embedUrl = it.attr("data-watch")
             if (embedUrl.isNotBlank()) {
                 Log.d(tag, "Found Embed: $embedUrl")
-                loadExtractor(embedUrl, data, subtitleCallback, callback)
+                loadExtractor(embedUrl, data, subtitleCallback, emit)
             }
         }
         document.select(".ServersList.Download a").forEach {
             val downloadUrl = it.attr("href")
             if (downloadUrl.isNotBlank()) {
                 Log.d(tag, "Found Download Link: $downloadUrl")
-                loadExtractor(downloadUrl, data, subtitleCallback, callback)
+                loadExtractor(downloadUrl, data, subtitleCallback, emit)
             }
         }
 
-        return true
+        return found
     }
 }

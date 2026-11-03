@@ -1,4 +1,4 @@
-name: Carateen
+name: Sources
 
 on:
   workflow_dispatch:
@@ -6,16 +6,26 @@ on:
     branches: [main]
     paths:
       - 'Carateen/**'
+      - 'CimaClub/**'
+      - 'MySeed/**'
+      - 'Iwaatch/**'
+      - 'SpacePowerFan/**'
+      - 'ArabicCartoon/**'
+      - 'Shooot/**'
+      - 'OnlineSportLive/**'
+      - 'shared/**'
+      - 'catalog-policy.json'
       - 'build.gradle.kts'
       - 'settings.gradle.kts'
       - 'gradle/**'
       - 'gradle.properties'
       - 'repo.json'
-      - 'scripts/publish_carateen.py'
+      - 'scripts/publish_sources.py'
+      - 'scripts/test_publish_sources.py'
       - '.github/workflows/carateen.yml'
 
 concurrency:
-  group: carateen-${{ github.ref }}
+  group: sources-${{ github.ref }}
   cancel-in-progress: true
 
 permissions:
@@ -40,26 +50,29 @@ jobs:
         with:
           packages: 'platform-tools platforms;android-35 build-tools;35.0.0'
           log-accepted-android-sdk-licenses: false
-      - name: Test and package Carateen
+      - name: Test and package managed providers
         working-directory: src
         run: |
           chmod +x gradlew
-          ./gradlew :Carateen:testDebugUnitTest :Carateen:writeCacheEntry --console=plain
-      - name: Update Carateen in the existing repository catalog
-        run: python3 src/scripts/publish_carateen.py src dist
+          ./gradlew :Carateen:testDebugUnitTest :MySeed:testDebugUnitTest :Carateen:writeCacheEntry :CimaClub:writeCacheEntry :MySeed:writeCacheEntry :Iwaatch:writeCacheEntry :SpacePowerFan:writeCacheEntry :ArabicCartoon:writeCacheEntry :Shooot:writeCacheEntry :OnlineSportLive:writeCacheEntry --console=plain
+      - name: Merge packages and update organized repository catalogs
+        run: |
+          python3 -m unittest discover -s src/scripts -p test_publish_sources.py
+          python3 src/scripts/publish_sources.py src dist
       - uses: actions/upload-artifact@v4
         with:
-          name: Carateen
+          name: Arabic-Sources
           path: |
-            dist/Carateen.cs3
+            dist/*.cs3
             src/Carateen/build/reports/tests/testDebugUnitTest/
+            src/MySeed/build/reports/tests/testDebugUnitTest/
       - name: Publish to the builds branch
         working-directory: dist
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add Carateen.cs3 plugins.json repo.json
+          git add '*.cs3' '*.json'
           if ! git diff --cached --quiet; then
-            git commit -m "Build Carateen from ${GITHUB_SHA}"
+            git commit -m "Build Arabic sources from ${GITHUB_SHA}"
             git push origin HEAD:builds
           fi

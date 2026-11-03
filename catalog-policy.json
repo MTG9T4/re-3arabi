@@ -1,0 +1,24 @@
+{
+  "managedModules": ["Carateen", "CimaClub", "MySeed", "Iwaatch", "SpacePowerFan", "ArabicCartoon", "Shooot", "OnlineSportLive"],
+  "retired": {
+    "Syria-live": "2026-11-03: repeated certificate failure at www.syrlive.com and TLS failure at the hardcoded catalog d.syrlive.com. Source retained for repair; removed from active installation lists."
+  },
+  "groups": {
+    "cartoons": {
+      "name": "Cartoons & Anime | كرتون وأنمي",
+      "modules": ["Carateen", "SpacePowerFan", "ArabicCartoon", "Anim3rb", "Anime-Phoenix", "Anime4up", "AnimeRift", "Animerco", "Animewitcher", "Witanime", "dima-toon"]
+    },
+    "movies": {
+      "name": "Movies & Series | أفلام ومسلسلات",
+      "modules": ["MySeed", "Iwaatch", "CimaClub", "3isk", "5TV", "Aflaam", "Aia2tv 2", "Akwam", "Alooytv", "Bristege", "Cee", "Cimalight", "Cimatn", "Egy", "Egydead", "Elif", "Faselhd", "Krmzy", "Lodynet", "MyCimaProvider", "OscarTv", "Shahid4u", "Shahidwbas", "Topcinema", "TukTukcima", "TuniflexBlog", "Tuniflix", "Viu", "Wecima", "cinemana", "eseek"]
+    },
+    "sports": {
+      "name": "Live TV & Sports | بث مباشر ورياضة",
+      "modules": ["Shooot", "OnlineSportLive", "Replaymatch", "TVgarden", "Yacintv"]
+    },
+    "tools": {
+      "name": "Other Sources & Tools | مصادر وأدوات أخرى",
+      "modules": ["Youtube", "Rate"]
+    }
+  }
+}

@@ -1,14 +1,27 @@
-## MTG9T4 fork: Carateen on Android TV
+## MTG9T4 Arabic Sources for Cloudstream / Android TV
 
-Add this fork's repository URL in Cloudstream's **Settings → Extensions → Add repository**:
+Add this repository in **Cloudstream → Settings → Extensions → Add repository**:
 
 ```text
 https://raw.githubusercontent.com/MTG9T4/re-3arabi/main/repo.json
 ```
 
-Install **Carateen**, then select it as your Home/Search provider. If it is hidden, enable Arabic in the extension language filter. This provider browses Carateen's classic-cartoon and Spacetoon catalogs, loads episodes on demand, and streams directly from the site's video servers. New titles appear without a plugin release after the catalog cache refreshes.
+The catalog is organized into **Cartoons & Anime**, **Movies & Series**, **Live TV & Sports**, and **Other Sources & Tools**. Install the providers you want, then select their website names in Home/Search. Enable the Arabic extension-language filter if needed.
 
-[Carateen details and validation](Carateen/README.md). Based on [Abodabodd/re-3arabi](https://github.com/Abodabodd/re-3arabi); original attribution and other providers are retained below. The original short codes below install the upstream repository; use the full URL above for this fork.
+New: **MySeed, Iwaatch, SpacePowerFan, ArabicCartoon, Shooot, OnlineSportLive**. Existing **CimaClub** now uses `w.cimacub.com` and version 2. Carateen version 2 is retained.
+
+| Category-only repository | Manifest filename (replace `repo.json` in the URL above) |
+| --- | --- |
+| Cartoons & anime | `repo-cartoons.json` |
+| Movies & series | `repo-movies.json` |
+| Live TV & sports | `repo-sports.json` |
+| Other / tools | `repo-tools.json` |
+
+ArabicCartoon's restricted titles require your own subscription; its extension settings open website sign-in. Iwaatch uses Android WebView for playback. Sports streams may only open during the event. **These providers have been built; complete Android TV playback has not been verified.**
+
+[Full source-by-source validation and cleanup report](docs/SOURCES-2026-11-03.md) · [Carateen details](Carateen/README.md).
+
+Based on [Abodabodd/re-3arabi](https://github.com/Abodabodd/re-3arabi); original attribution and other providers are retained below. The original short codes below install the upstream repository; use the full URL above for this fork.
 
 ---
 
