@@ -1,0 +1,108 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/MTG9T4/re-3arabi/refs/heads/builds/Shooot.cs3",
+    "status": 1,
+    "version": 1,
+    "name": "[Sports] Shooot",
+    "internalName": "Shooot",
+    "authors": [
+      "MTG9T4"
+    ],
+    "description": "Today's football schedule; live streams are available during broadcasts.",
+    "fileSize": 36231,
+    "repositoryUrl": "https://github.com/MTG9T4/re-3arabi",
+    "language": "ar",
+    "tvTypes": [
+      "Live"
+    ],
+    "iconUrl": "https://www.google.com/s2/favicons?domain=shooot.me&sz=128",
+    "apiVersion": 1,
+    "fileHash": "sha256-8467c90c00bd5b73963d61daf7409343ba5e0fb49272d879ed9d6fdd4608935d"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/MTG9T4/re-3arabi/refs/heads/builds/OnlineSportLive.cs3",
+    "status": 1,
+    "version": 1,
+    "name": "[Sports] OnlineSportLive",
+    "internalName": "OnlineSportLive",
+    "authors": [
+      "MTG9T4"
+    ],
+    "description": "Live football fixtures and the streams published on their match pages.",
+    "fileSize": 35784,
+    "repositoryUrl": "https://github.com/MTG9T4/re-3arabi",
+    "language": "ar",
+    "tvTypes": [
+      "Live"
+    ],
+    "iconUrl": "https://www.google.com/s2/favicons?domain=onlinesportlive.com&sz=128",
+    "apiVersion": 1,
+    "fileHash": "sha256-061b058f6f6f0e8ac30e2280e3a399c0d24848d1c980ba3d29c5110d60108f24"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/Replaymatch.cs3",
+    "status": 1,
+    "version": 2,
+    "name": "[Sports] FullMatchShows",
+    "internalName": "Replaymatch",
+    "authors": [
+      "Abodabodd"
+    ],
+    "description": "",
+    "fileSize": 29210,
+    "repositoryUrl": "https://github.com/Abodabodd/re-3arabi",
+    "language": "en",
+    "tvTypes": [
+      "Movie",
+      "Others",
+      "live"
+    ],
+    "iconUrl": "https://fullmatchshows.com/wp-content/uploads/2024/04/LOGOSASO.png",
+    "apiVersion": 1,
+    "fileHash": "sha256-9702287e1acdbc6556a5f43350aac49df0fc323c2bb50ecc55f0f9173851e147"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/TVgarden.cs3",
+    "status": 1,
+    "version": 1,
+    "name": "[Sports] TVgarden(Famelack)",
+    "internalName": "TVgarden",
+    "authors": [
+      "Abodabodd"
+    ],
+    "description": "",
+    "fileSize": 15565,
+    "repositoryUrl": "https://github.com/Abodabodd/re-3arabi",
+    "language": "ar",
+    "tvTypes": [
+      "TvSeries",
+      "Movie",
+      "Live"
+    ],
+    "iconUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9Lci-tXtOtWaHcEp9An7bqIkXs4yzH7EcfA&s",
+    "apiVersion": 1,
+    "fileHash": "sha256-2e81fb135538fb427a6ea20d7a9a4472d240826136088c0deb09352a5c24ee5e"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/Yacintv.cs3",
+    "status": 1,
+    "version": 1,
+    "name": "[Sports] Yacintv",
+    "internalName": "Yacintv",
+    "authors": [
+      "Abodabodd"
+    ],
+    "description": "",
+    "fileSize": 24443,
+    "repositoryUrl": "https://github.com/Abodabodd/re-3arabi",
+    "language": "ar",
+    "tvTypes": [
+      "TvSeries",
+      "Live",
+      "Movie"
+    ],
+    "iconUrl": "https://yt3.googleusercontent.com/ulm35tweg3do5istps0TgCjMmJSVczGUL2NIrXMwI1DDRi5ty29BIzQSUHVgqZN5CSo1PHhiA6M=s900-c-k-c0x00ffffff-no-rj",
+    "apiVersion": 1,
+    "fileHash": "sha256-440fb181a313ab67f7d420f4a657eb02dcd65a0aa75df28db4e3994b5ba72c1d"
+  }
+]

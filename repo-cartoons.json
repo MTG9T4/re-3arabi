@@ -1,0 +1,9 @@
+{
+  "name": "MTG9T4 · Cartoons & Anime | كرتون وأنمي",
+  "description": "Cartoons, movies, series and live sports | كرتون وأفلام ومسلسلات ورياضة",
+  "iconUrl": "https://raw.githubusercontent.com/MTG9T4/re-3arabi/refs/heads/main/icon.png",
+  "manifestVersion": 1,
+  "pluginLists": [
+    "https://raw.githubusercontent.com/MTG9T4/re-3arabi/refs/heads/builds/cartoons.json"
+  ]
+}

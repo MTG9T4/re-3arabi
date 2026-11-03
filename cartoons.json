@@ -1,0 +1,241 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/MTG9T4/re-3arabi/refs/heads/builds/Carateen.cs3",
+    "status": 1,
+    "version": 2,
+    "name": "[Cartoons] Carateen",
+    "internalName": "Carateen",
+    "authors": [
+      "abodabodd"
+    ],
+    "description": "عد بالزمن للوراء وشاهد كارتون الطفولة ✨",
+    "fileSize": 26359,
+    "repositoryUrl": "https://github.com/MTG9T4/re-3arabi",
+    "language": "ar",
+    "tvTypes": [
+      "Movie",
+      "TvSeries",
+      "Anime",
+      "Cartoon",
+      "Live"
+    ],
+    "iconUrl": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/refs/heads/main/Carateen/icon.png",
+    "apiVersion": 1,
+    "fileHash": "sha256-501c65a6d2bbce91446d84e8f95fe41089abf973ab09e67bea227a7deb71c712"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/MTG9T4/re-3arabi/refs/heads/builds/SpacePowerFan.cs3",
+    "status": 1,
+    "version": 1,
+    "name": "[Cartoons] SpacePowerFan",
+    "internalName": "SpacePowerFan",
+    "authors": [
+      "MTG9T4"
+    ],
+    "description": "Dubbed cartoons and anime from SpacePowerFan",
+    "fileSize": 30997,
+    "repositoryUrl": "https://github.com/MTG9T4/re-3arabi",
+    "language": "ar",
+    "tvTypes": [
+      "Cartoon",
+      "Anime",
+      "Movie",
+      "TvSeries"
+    ],
+    "iconUrl": "https://www.google.com/s2/favicons?domain=spacepowerfan.com&sz=128",
+    "apiVersion": 1,
+    "fileHash": "sha256-31da2e73b7f6cf832564323ff80f961ca56dd161943101dba1e5e39f7320ac0e"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/MTG9T4/re-3arabi/refs/heads/builds/ArabicCartoon.cs3",
+    "status": 1,
+    "version": 1,
+    "name": "[Cartoons] ArabicCartoon",
+    "internalName": "ArabicCartoon",
+    "authors": [
+      "MTG9T4"
+    ],
+    "description": "Arabic Cartoon catalog. Restricted episodes require your own signed-in subscription.",
+    "fileSize": 34285,
+    "repositoryUrl": "https://github.com/MTG9T4/re-3arabi",
+    "language": "ar",
+    "tvTypes": [
+      "Cartoon",
+      "TvSeries",
+      "Movie"
+    ],
+    "iconUrl": "https://www.google.com/s2/favicons?domain=arabiccartoon.org&sz=128",
+    "apiVersion": 1,
+    "fileHash": "sha256-4e75e4c36717cad4a68ff09bccb70a084a5501d06ea8f5f9182bd46886821f4b"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/Anim3rb.cs3",
+    "status": 1,
+    "version": 1,
+    "name": "[Cartoons] Anime3rb",
+    "internalName": "Anim3rb",
+    "authors": [
+      "Abodabodd"
+    ],
+    "description": "",
+    "fileSize": 29742,
+    "repositoryUrl": "https://github.com/Abodabodd/re-3arabi",
+    "language": "ar",
+    "tvTypes": [
+      "TvSeries",
+      "Anime"
+    ],
+    "iconUrl": "https://images.anime3rb.com/favicon/apple-touch-icon.png",
+    "apiVersion": 1,
+    "fileHash": "sha256-06ace8dd11e728d071ec7035836ef6d4f29dd8d1f2cf8aa39483a30e00075561"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/Anime-Phoenix.cs3",
+    "status": 1,
+    "version": 1,
+    "name": "[Cartoons] Anime-Phoenix",
+    "internalName": "Anime-Phoenix",
+    "authors": [
+      "Abodabodd"
+    ],
+    "description": "",
+    "fileSize": 43522,
+    "repositoryUrl": "https://github.com/Abodabodd/re-3arabi",
+    "language": "ar",
+    "tvTypes": [
+      "TvSeries",
+      "Anime",
+      "Movie"
+    ],
+    "iconUrl": "https://yt3.googleusercontent.com/mBIIR5cqQC4Y-o7HaxbkJfs305X6tbHLSNPk6MRMCDJsH8xP0SfGhK-CBDpSmH95wSff9z99sg=s900-c-k-c0x00ffffff-no-rj",
+    "apiVersion": 1,
+    "fileHash": "sha256-0fdf714ffe859daa3fc0acee11e58311fb86e8fee3766302a6f694bec3461e27"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/Anime4up.cs3",
+    "status": 1,
+    "version": 1,
+    "name": "[Cartoons] Anime4up",
+    "internalName": "Anime4up",
+    "authors": [
+      "Abodabodd"
+    ],
+    "description": "",
+    "fileSize": 37890,
+    "repositoryUrl": "https://github.com/Abodabodd/re-3arabi",
+    "language": "ar",
+    "tvTypes": [
+      "TvSeries",
+      "Movie",
+      "Anime"
+    ],
+    "iconUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkVDfHjqUpRyrWJjW8wUHH87BhSO6B9uxI-B80sAy_AQ&s=10",
+    "apiVersion": 1,
+    "fileHash": "sha256-30ae4aaab6596ed950a55d5a41dfd44d42721c7d1e9af0fea2eabc61a40ece06"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/AnimeRift.cs3",
+    "status": 1,
+    "version": 1,
+    "name": "[Cartoons] AnimeRift",
+    "internalName": "AnimeRift",
+    "authors": [
+      "Abodabodd"
+    ],
+    "description": "⚠️ تنبيه: يُرجى استخدام VPN لتجنب حظر عنوان الـ IP الخاص بك",
+    "fileSize": 49807,
+    "repositoryUrl": "https://github.com/Abodabodd/re-3arabi",
+    "language": "ar",
+    "tvTypes": [
+      "TvSeries",
+      "Anime",
+      "Movie"
+    ],
+    "iconUrl": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/refs/heads/main/AnimeRift/icon.png",
+    "apiVersion": 1,
+    "fileHash": "sha256-986a25407da636b4dd1656712b594ca4f4daba02448103661818edd9dc61ed1e"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/Animerco.cs3",
+    "status": 1,
+    "version": 3,
+    "name": "[Cartoons] Animerco",
+    "internalName": "Animerco",
+    "authors": [
+      "Abodabodd"
+    ],
+    "description": "",
+    "fileSize": 91390,
+    "repositoryUrl": "https://github.com/Abodabodd/re-3arabi",
+    "language": "ar",
+    "tvTypes": [
+      "TvSeries",
+      "Movie"
+    ],
+    "iconUrl": "https://raw.githubusercontent.com/Abodabodd/Oldarabrepo/refs/heads/main/img/file_0000000042f861f49090744dc097ee2f.png",
+    "apiVersion": 1,
+    "fileHash": "sha256-795b94f18654b53250a61513711ace519593a3583bfc48a6cf2e0d5af43bbf7f"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/Animewitcher.cs3",
+    "status": 1,
+    "version": 3,
+    "name": "[Cartoons] AnimeWitcher",
+    "internalName": "Animewitcher",
+    "authors": [
+      "Abodabodd"
+    ],
+    "description": "",
+    "fileSize": 34328,
+    "repositoryUrl": "https://github.com/Abodabodd/re-3arabi",
+    "language": "ar",
+    "tvTypes": [
+      "Anime"
+    ],
+    "iconUrl": "https://raw.githubusercontent.com/Abodabodd/Oldarabrepo/refs/heads/main/img/anime_witcher_round_icon.png",
+    "apiVersion": 1,
+    "fileHash": "sha256-4c639f9392d46e45f4ee84e8799c810cc1d11fba2f13ff7e32865c71987c2fb4"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/Witanime.cs3",
+    "status": 1,
+    "version": 1,
+    "name": "[Cartoons] Witanime",
+    "internalName": "Witanime",
+    "authors": [
+      "Abodabodd"
+    ],
+    "description": "",
+    "fileSize": 60602,
+    "repositoryUrl": "https://github.com/Abodabodd/re-3arabi",
+    "language": "ar",
+    "tvTypes": [
+      "TvSeries",
+      "Movie"
+    ],
+    "iconUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7AH2oC7LwumXRpHM8_WLpIFvDIfmS67jkjlhsCKpPaZdqcneigzUQX4g&s=10",
+    "apiVersion": 1,
+    "fileHash": "sha256-c44a16641dbac196199ca600d69457da0105b62e54a9f6a0760f75d928ff258c"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/dima-toon.cs3",
+    "status": 1,
+    "version": 1,
+    "name": "[Cartoons] Dima toon",
+    "internalName": "dima-toon",
+    "authors": [
+      "Abodabodd"
+    ],
+    "description": "",
+    "fileSize": 19812,
+    "repositoryUrl": "https://github.com/Abodabodd/re-3arabi",
+    "language": "ar",
+    "tvTypes": [
+      "TvSeries",
+      "Anime"
+    ],
+    "iconUrl": "https://www.dima-toon.com/wp-content/uploads/2025/10/DimaToonlogo11.png",
+    "apiVersion": 1,
+    "fileHash": "sha256-048fc02cd74f7d43a2618a563a17c3727a2a801accb20f9e1cf13ef6e68619ef"
+  }
+]
