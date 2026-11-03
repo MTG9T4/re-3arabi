@@ -276,30 +276,6 @@
         "fileHash": "sha256-17c6074460176b5547d0d242c09727c427bedae8bfe2529693e60f0b0348cb31"
     },
     {
-        "url": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/Carateen.cs3",
-        "status": 1,
-        "version": 1,
-        "name": "Carateen",
-        "internalName": "Carateen",
-        "authors": [
-            "abodabodd"
-        ],
-        "description": "عد بالزمن للوراء وشاهد كارتون الطفولة ✨",
-        "fileSize": 24316,
-        "repositoryUrl": "https://github.com/Abodabodd/re-3arabi",
-        "language": "ar",
-        "tvTypes": [
-            "Movie",
-            "TvSeries",
-            "Anime",
-            "Cartoon",
-            "Live"
-        ],
-        "iconUrl": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/refs/heads/main/Carateen/icon.png",
-        "apiVersion": 1,
-        "fileHash": "sha256-447369857727c7816818cd523aa1cf03521124ab5356029a1dc3b434cf473c34"
-    },
-    {
         "url": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/Cee.cs3",
         "status": 1,
         "version": 1,
@@ -948,5 +924,29 @@
         "iconUrl": "https://raw.githubusercontent.com/Abodabodd/Oldarabrepo/refs/heads/main/img/IMG_%D9%A2%D9%A0%D9%A2%D9%A5%D9%A1%D9%A2%D9%A0%D9%A6_%D9%A1%D9%A7%D9%A2%D9%A6%D9%A1%D9%A6.jpg",
         "apiVersion": 1,
         "fileHash": "sha256-dc1d7eed7ec6bdf47ff36d1ee60b1062e974399ee2995563f62229114b63e530"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/MTG9T4/re-3arabi/refs/heads/builds/Carateen.cs3",
+        "status": 1,
+        "version": 2,
+        "name": "Carateen",
+        "internalName": "Carateen",
+        "authors": [
+            "abodabodd"
+        ],
+        "description": "عد بالزمن للوراء وشاهد كارتون الطفولة ✨",
+        "fileSize": 26359,
+        "repositoryUrl": "https://github.com/MTG9T4/re-3arabi",
+        "language": "ar",
+        "tvTypes": [
+            "Movie",
+            "TvSeries",
+            "Anime",
+            "Cartoon",
+            "Live"
+        ],
+        "iconUrl": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/refs/heads/main/Carateen/icon.png",
+        "apiVersion": 1,
+        "fileHash": "sha256-501c65a6d2bbce91446d84e8f95fe41089abf973ab09e67bea227a7deb71c712"
     }
 ]
