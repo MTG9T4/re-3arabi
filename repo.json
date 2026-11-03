@@ -1,7 +1,7 @@
 {
-  "name": "3rabi عربي",
+  "name": "MTG9T4 عربي + Carateen",
   "description": "مشاهدة الافلام والمسلسلات تجربة خالية من الاعلانات",
-  "iconUrl": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/refs/heads/main/icon.png",
+  "iconUrl": "https://raw.githubusercontent.com/MTG9T4/re-3arabi/refs/heads/main/icon.png",
   "manifestVersion": 1,
-  "pluginLists": ["https://raw.githubusercontent.com/Abodabodd/re-3arabi/refs/heads/builds/plugins.json"]
+  "pluginLists": ["https://raw.githubusercontent.com/MTG9T4/re-3arabi/refs/heads/builds/plugins.json"]
 }

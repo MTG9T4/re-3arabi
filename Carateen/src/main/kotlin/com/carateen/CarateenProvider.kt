@@ -21,19 +21,16 @@ import com.lagradost.cloudstream3.newTvSeriesSearchResponse
 import com.lagradost.cloudstream3.utils.ExtractorLink
 import com.lagradost.cloudstream3.utils.ExtractorLinkType
 import com.lagradost.cloudstream3.utils.newExtractorLink
-import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonArray
 import kotlinx.serialization.json.JsonElement
 import kotlinx.serialization.json.JsonObject
 import kotlinx.serialization.json.JsonPrimitive
 import kotlinx.serialization.json.contentOrNull
-import javax.crypto.Cipher
-import javax.crypto.spec.IvParameterSpec
-import javax.crypto.spec.SecretKeySpec
 
 private const val UA =
     "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36"
-private const val AES_KEY = "7annaba3l_loves_crypto_safe_key!"
+private const val PAGE_SIZE = 40
+private const val CATALOG_TTL_MS = 15 * 60 * 1000L
 
 class CarateenProvider : MainAPI() {
     override var name = "Carateen"
@@ -44,17 +41,21 @@ class CarateenProvider : MainAPI() {
     override val hasMainPage = true
 
     override val mainPage = mainPageOf(
-        "sp" to "سبيستون غو",
         "tg" to "كرتون أيام زمان",
+        "sp" to "سبيستون غو",
         "live" to "البث المباشر",
     )
 
-    private val json = Json { ignoreUnknownKeys = true }
-    private val shows = java.util.concurrent.ConcurrentHashMap<String, List<JsonObject>>()
+    private data class Catalog(val items: List<JsonObject>, val fetchedAt: Long)
+    private val shows = java.util.concurrent.ConcurrentHashMap<String, Catalog>()
+
+    private fun cached(kind: String) = shows[kind]
+        ?.takeIf { System.currentTimeMillis() - it.fetchedAt < CATALOG_TTL_MS }?.items
 
     private val requestHeaders get() = mapOf(
         "User-Agent" to UA,
         "Referer" to "$mainUrl/",
+        "Accept" to "application/json",
     )
 
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
@@ -62,18 +63,19 @@ class CarateenProvider : MainAPI() {
             val items = getChannels().mapNotNull { it.toLiveSearch() }
             return newHomePageResponse(request.name, items, false)
         }
-        val items = getShows(request.data).mapNotNull { it.toSearch(request.data) }
-        return newHomePageResponse(request.name, items, false)
+        val catalog = getShows(request.data)
+        val offset = (page.coerceAtLeast(1) - 1) * PAGE_SIZE
+        val items = catalog.drop(offset).take(PAGE_SIZE).mapNotNull { it.toSearch(request.data) }
+        return newHomePageResponse(request.name, items, offset + PAGE_SIZE < catalog.size)
     }
 
     override suspend fun search(query: String): List<SearchResponse> {
         val q = query.trim()
         if (q.isBlank()) return emptyList()
-        return listOf("sp", "tg").flatMap { kind ->
+        return listOf("tg", "sp").flatMap { kind ->
             getShows(kind)
                 .filter { it.title(kind)?.contains(q, ignoreCase = true) == true }
                 .mapNotNull { it.toSearch(kind) }
-                .take(40) // keep both catalogs visible in the results
         }
     }
 
@@ -112,6 +114,7 @@ class CarateenProvider : MainAPI() {
             newEpisode("$kind|$showId|$epId") {
                 this.name = ep.str(if (kind == "sp") "pref" else "title")
                 this.episode = ep.str(if (kind == "sp") "number" else "order_id")?.toIntOrNull()
+                this.season = ep.str("season")?.toIntOrNull()?.takeIf { it > 0 }
                 this.posterUrl = ep.episodePoster(kind) ?: poster
                 if (kind == "sp") this.description = ep.str("season") // arc name, e.g. "آرك زعيم الدمار بيروس"
             }
@@ -145,6 +148,7 @@ class CarateenProvider : MainAPI() {
             callback(
                 newExtractorLink(name, channel.str("name") ?: name, link, ExtractorLinkType.M3U8) {
                     this.headers = headers
+                    this.referer = if (channel.str("isLegacy") == "true") "" else "$mainUrl/"
                 },
             )
             return true
@@ -152,17 +156,19 @@ class CarateenProvider : MainAPI() {
         val targets: List<Pair<String, String?>> = parts.getOrNull(2)?.let { listOf(it to null) }
             ?: fetchEpisodes(kind, showId).mapNotNull { ep ->
                 val epId = ep.episodeId(kind) ?: return@mapNotNull null
-                epId to ep.str(if (kind == "sp") "number" else "order_id")
+                epId to (ep.str(if (kind == "sp") "pref" else "title")
+                    ?: ep.str(if (kind == "sp") "number" else "order_id"))
             }
 
         var found = false
-        for ((epId, number) in targets) {
+        for ((epId, edition) in targets) {
             val link = if (kind == "sp") spLink(epId) else tgLink(epId, showId)
             if (link == null) continue
-            val label = if (targets.size > 1 && number != null) "$name - $number" else name
+            val label = if (targets.size > 1 && edition != null) "$name - $edition" else name
             callback(
                 newExtractorLink(name, label, link, ExtractorLinkType.M3U8) {
                     this.headers = requestHeaders
+                    this.referer = "$mainUrl/"
                 },
             )
             found = true
@@ -170,17 +176,17 @@ class CarateenProvider : MainAPI() {
         return found
     }
 
-    private suspend fun getShows(kind: String): List<JsonObject> = shows[kind] ?: run {
+    private suspend fun getShows(kind: String): List<JsonObject> = cached(kind) ?: run {
         val path = if (kind == "sp") "/api/sp/tvshows" else "/api/tvshows"
         val list = (get(path) as? JsonArray)?.mapNotNull { it as? JsonObject } ?: emptyList()
-        if (list.isNotEmpty()) shows[kind] = list
+        if (list.isNotEmpty()) shows[kind] = Catalog(list, System.currentTimeMillis())
         list
     }
 
-    private suspend fun getChannels(): List<JsonObject> = shows["live"] ?: run {
+    private suspend fun getChannels(): List<JsonObject> = cached("live") ?: run {
         val list = ((get("/api/sp/live") as? JsonObject)?.get("channels") as? JsonArray)
             ?.mapNotNull { it as? JsonObject } ?: emptyList()
-        if (list.isNotEmpty()) shows["live"] = list
+        if (list.isNotEmpty()) shows["live"] = Catalog(list, System.currentTimeMillis())
         list
     }
 
@@ -195,42 +201,11 @@ class CarateenProvider : MainAPI() {
     private suspend fun tgLink(episodeId: String, showId: String): String? =
         (get("/api/episode?episodeId=$episodeId&showId=$showId") as? JsonObject)?.str("streamUrl")
 
-    private suspend fun get(path: String): JsonElement? = try {
-        decode(app.get("$mainUrl$path", headers = requestHeaders).text)
-    } catch (_: Exception) {
-        null
-    }
+    private suspend fun get(path: String): JsonElement =
+        CarateenJson.decode(app.get("$mainUrl$path", headers = requestHeaders).text)
 
-    private suspend fun post(path: String, body: Map<String, String>): JsonElement? = try {
-        decode(app.post("$mainUrl$path", json = body, headers = requestHeaders).text)
-    } catch (_: Exception) {
-        null
-    }
-
-    /** Unwraps the AES envelope; plain JSON is returned as is. */
-    private fun decode(text: String): JsonElement? = try {
-        val envelope = json.parseToJsonElement(text) as? JsonObject
-        val iv = envelope?.str("iv")
-        val encrypted = envelope?.str("encryptedData")
-        when {
-            envelope == null -> null
-            iv == null || encrypted == null -> envelope
-            else -> {
-                val cipher = Cipher.getInstance("AES/CBC/PKCS5Padding")
-                cipher.init(
-                    Cipher.DECRYPT_MODE,
-                    SecretKeySpec(AES_KEY.toByteArray(), "AES"),
-                    IvParameterSpec(unhex(iv)),
-                )
-                json.parseToJsonElement(String(cipher.doFinal(unhex(encrypted)), Charsets.UTF_8))
-            }
-        }
-    } catch (_: Exception) {
-        null
-    }
-
-    private fun unhex(hex: String) =
-        ByteArray(hex.length / 2) { hex.substring(it * 2, it * 2 + 2).toInt(16).toByte() }
+    private suspend fun post(path: String, body: Map<String, String>): JsonElement =
+        CarateenJson.decode(app.post("$mainUrl$path", json = body, headers = requestHeaders).text)
 
     private fun JsonObject.str(key: String): String? =
         (this[key] as? JsonPrimitive)?.contentOrNull?.takeIf { it.isNotBlank() && it != "null" }

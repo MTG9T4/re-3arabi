@@ -18,6 +18,7 @@ permissions:
 
 jobs:
   build:
+    if: github.repository == 'Abodabodd/re-3arabi' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Source

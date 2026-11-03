@@ -52,7 +52,7 @@ subprojects {
     cloudstream {
         setRepo(
             System.getenv("GITHUB_REPOSITORY")
-                ?: "https://github.com/Abodabodd/re-3arabi/"
+                ?: "https://github.com/MTG9T4/re-3arabi/"
         )
         authors = listOf("Abodabodd")
     }

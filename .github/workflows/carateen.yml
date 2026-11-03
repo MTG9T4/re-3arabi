@@ -1,0 +1,62 @@
+name: Carateen
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'Carateen/**'
+      - 'build.gradle.kts'
+      - 'settings.gradle.kts'
+      - 'gradle/**'
+      - 'gradle.properties'
+      - 'repo.json'
+      - 'scripts/publish_carateen.py'
+      - '.github/workflows/carateen.yml'
+
+concurrency:
+  group: carateen-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: src
+      - uses: actions/checkout@v4
+        with:
+          ref: builds
+          path: dist
+      - uses: actions/setup-java@v5.2.0
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v3
+      - name: Test and package Carateen
+        working-directory: src
+        run: |
+          chmod +x gradlew
+          ./gradlew :Carateen:testDebugUnitTest :Carateen:writeCacheEntry --console=plain
+      - name: Update Carateen in the existing repository catalog
+        run: python3 src/scripts/publish_carateen.py src dist
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Carateen
+          path: |
+            dist/Carateen.cs3
+            src/Carateen/build/reports/tests/testDebugUnitTest/
+      - name: Publish to the builds branch
+        working-directory: dist
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add Carateen.cs3 plugins.json repo.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Build Carateen from ${GITHUB_SHA}"
+            git push origin HEAD:builds
+          fi

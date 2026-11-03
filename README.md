@@ -1,3 +1,17 @@
+## MTG9T4 fork: Carateen on Android TV
+
+Add this fork's repository URL in Cloudstream's **Settings → Extensions → Add repository**:
+
+```text
+https://raw.githubusercontent.com/MTG9T4/re-3arabi/main/repo.json
+```
+
+Install **Carateen**, then select it as your Home/Search provider. If it is hidden, enable Arabic in the extension language filter. This provider browses Carateen's classic-cartoon and Spacetoon catalogs, loads episodes on demand, and streams directly from the site's video servers. New titles appear without a plugin release after the catalog cache refreshes.
+
+[Carateen details and validation](Carateen/README.md). Based on [Abodabodd/re-3arabi](https://github.com/Abodabodd/re-3arabi); original attribution and other providers are retained below. The original short codes below install the upstream repository; use the full URL above for this fork.
+
+---
+
 <h1 align="center">📺 إضافات عربية لـ Cloudstream</h1>
 
 <h3 align="center">

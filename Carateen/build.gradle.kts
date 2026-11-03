@@ -1,4 +1,4 @@
-version = 1
+version = 2
 
 cloudstream {
     description = "عد بالزمن للوراء وشاهد كارتون الطفولة ✨"
@@ -15,4 +15,8 @@ cloudstream {
         "Live",
     )
     iconUrl = "https://raw.githubusercontent.com/Abodabodd/re-3arabi/refs/heads/main/Carateen/icon.png"
+}
+
+dependencies {
+    testImplementation("junit:junit:4.13.2")
 }
